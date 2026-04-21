@@ -1,20 +1,20 @@
 class Dssh < Formula
   desc "Dead Simple SSH - TUI-based SSH connection manager"
   homepage "https://github.com/madLinux7/dssh"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/madLinux7/dssh/releases/download/v2.1.0/dssh-darwin-arm64.tar.gz"
-      sha256 "ef678de6cf340027a7120651efc9399d8e9091af62c15a784d21c2d067535593"
+      url "https://github.com/madLinux7/dssh/releases/download/v2.1.1/dssh-darwin-arm64.tar.gz"
+      sha256 "c9161038e69a6f9693a388b52ee6978403796b05c0878081e8ec33cb2424065a"
 
       def install
         bin.install "dssh-darwin-arm64" => "dssh"
       end
     elsif Hardware::CPU.intel?
-      url "https://github.com/madLinux7/dssh/releases/download/v2.1.0/dssh-darwin-amd64.tar.gz"
-      sha256 "5cccbfb47a0f1e610e4ddec31944a643889775d4a597ed27327a71e013144b5b"
+      url "https://github.com/madLinux7/dssh/releases/download/v2.1.1/dssh-darwin-amd64.tar.gz"
+      sha256 "23216e793809a77f8beb874f5b68a47afd1350ef78e167c61d889b5fa6594876"
 
       def install
         bin.install "dssh-darwin-amd64" => "dssh"
